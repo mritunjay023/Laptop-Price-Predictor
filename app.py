@@ -7,7 +7,7 @@ import pandas
 pipe = pandas.read_pickle(open('pipe.pkl','rb'))
 df = pandas.read_pickle(open('df.pkl','rb'))
 
-st.title("Laptop Predictor")
+st.title("Laptop Price Predictor")
 
 # brand
 company = st.selectbox('Brand',df['Company'].unique())
