@@ -28,7 +28,7 @@ ram = st.sidebar.selectbox('RAM (in GB)', [2, 4, 6, 8, 12, 16, 24, 32, 64])
 user_inputs['RAM'] = ram
 
 # Weight
-weight = st.sidebar.number_input('Weight of the Laptop (kg)', min_value=1)
+weight = st.sidebar.number_input('Weight of the Laptop (kg)', min_value=0.1)
 user_inputs['Weight'] = weight
 
 # Touchscreen
@@ -40,7 +40,7 @@ ips = st.sidebar.radio('IPS', ['No', 'Yes'])
 user_inputs['IPS'] = ips
 
 # Screen size
-screen_size = st.sidebar.number_input('Screen Size (in inches)', min_value=10)
+screen_size = st.sidebar.number_input('Screen Size (in inches)', min_value=0.1)
 user_inputs['Screen Size'] = screen_size
 
 # Resolution
